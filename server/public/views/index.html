@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <title>Angular</title>
+    <title>Omicron Routing</title>
 
     <script type="text/javascript" src="/vendors/angular.min.js"></script>
     <script type="text/javascript" src="/vendors/angular-route.min.js"></script>
-    <script type="text/javascript" src="/scripts/clientapp.js"></script>
-
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
-</head>
-
-<body>
-
-    <div ng-include="'views/partials/header.html'"></div>
-    <!-- <main ng-view></main> -->
-    <div ng-include="'views/partials/characterSelect.html'"></div>
-
-    <div ng-include="'views/partials/footer.html'"></div>
-
-</body>
-
-
-
+    <script type="text/javascript" src="/scripts/client.js"></script>
+  </head>
+  <body>
+      <h1>HEADER</h1>
+      <div ng-include="'/views/partials/nav.html'"></div>
+      <main ng-view></main>
+      <h3>FOOTER</h3>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 {
-  "name": "angular_routing",
+  "name": "omicron_routing",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,12 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/app.js"
   },
-  "author": "",
+  "author": "Scott Bromander",
   "license": "ISC",
   "dependencies": {
     "angular": "^1.5.8",
     "angular-route": "^1.5.8",
-    "body-parser": "^1.15.2",
     "express": "^4.14.0"
   }
 }
