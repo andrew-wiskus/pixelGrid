@@ -1,0 +1,80 @@
+#header_container{
+  width: 100%;
+  height: 50px;
+  background-color:#C0D461;
+}
+
+#footer_container{
+  width: 100%;
+  height: 100px;
+  background-color:#C0D461;
+
+}
+
+#character_container{
+  width: 800px;
+  height: 600px;
+  background-color:#AEF78E;
+  margin: auto;
+  position: relative;
+}
+
+.characterSelect{
+  width: 600px;
+  height: 180px;
+  background-color: #66A182;
+  position: absolute;
+  bottom: 0;
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+.sickpic{
+  width: 350px;
+  height: 400px;
+}
+
+.characterImage{
+  width: 350px;
+  height: 400px;
+  background-color: none;
+  display: inline-block;
+  margin-left:20px;
+  margin-top: 10px;
+}
+.characterBio{
+  width: 400px;
+  height: 400px;
+  background-color: none;
+    display: inline-block;
+      margin-top: 10px;
+}
+.characterSelect_container{
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  background-color: #2E4057;
+  margin-left: 22px;
+  margin-right: 22px;
+  margin-top: 12px;
+}
+
+.charName{
+  color: white;
+  width: 150px;
+  height:40px;
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 20px;
+
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+
+
+}
+body{
+  margin: 0;
+  padding: 0;
+}
