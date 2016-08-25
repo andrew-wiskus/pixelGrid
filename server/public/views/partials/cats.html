@@ -1,3 +1,20 @@
-<p>
-  CATS RULE THE INTERNET
-</p>
+<!DOCTYPE html>
+<div id="gridContainer" class="pixelGrid_container">
+
+
+
+    <!-- ng-init="myStyle={'background-color':'{{pixel.color}}','height':'{{pixel.height}}px','width':'{{pixel.width}}px'}" -->
+    <!-- <div id="testing">Hello</div> -->
+
+
+    <div id="{{pixel.id}}" ng-repeat="pixel in pixels" style="background-color:#{{pixel.color}}">
+        <style>
+        #{{pixel.id}} {
+                background-color: #{{pixel.color}};
+                height: {{pixel.height}};
+                width: {{pixel.width}};
+                float: left;
+        }
+        </style>
+    </div>
+</div>
