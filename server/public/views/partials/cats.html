@@ -7,10 +7,20 @@
     <!-- <div id="testing">Hello</div> -->
 
 
-    <div id="{{pixel.id}}" ng-repeat="pixel in pixels" style="background-color:#{{pixel.color}}">
-        <style>
+    <div id="{{pixel.id}}" class="pixel" ng-repeat="pixel in pixels">
+        <style ng-if="$even">
+
         #{{pixel.id}} {
                 background-color: #{{pixel.color}};
+                height: {{pixel.height}};
+                width: {{pixel.width}};
+                float: left;
+        }
+        </style>
+        <style ng-if="$odd">
+
+        #{{pixel.id}} {
+                background-color: tomato;
                 height: {{pixel.height}};
                 width: {{pixel.width}};
                 float: left;

@@ -9,9 +9,6 @@
 
 }
 
-.pixel{
-  padding: none;
-  margin: none;
-  border: none;
-  float: left;
+.pixel:hover{
+  opacity: 0.1;
 }

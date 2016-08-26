@@ -41,7 +41,7 @@ myApp.config(["$routeProvider", function($routeProvider){
 
 myApp.controller("catController", ["$scope","$document", function($scope, $document){
 
-makeGrid($document, $scope, "gridContainer", 64);
+makeGrid($document, $scope, "gridContainer", 63);
 
 
 
