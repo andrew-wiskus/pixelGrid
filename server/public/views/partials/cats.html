@@ -1,10 +1,14 @@
 <!DOCTYPE html>
+
+<button ng-click="newGrid(amount)"> NEW GRID :D </button>
+<input type='number' ng-value ="amount" ng-model="amount">
 <div id="gridContainer" class="pixelGrid_container">
 
 
 
     <!-- ng-init="myStyle={'background-color':'{{pixel.color}}','height':'{{pixel.height}}px','width':'{{pixel.width}}px'}" -->
     <!-- <div id="testing">Hello</div> -->
+
 
 
     <div id="{{pixel.id}}" class="pixel" ng-repeat="pixel in pixels">
@@ -20,11 +24,13 @@
         <style ng-if="$odd">
 
         #{{pixel.id}} {
-                background-color: tomato;
+                background-color: #{{pixel.color}};
                 height: {{pixel.height}};
                 width: {{pixel.width}};
                 float: left;
         }
         </style>
     </div>
+
+
 </div>
