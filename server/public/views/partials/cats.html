@@ -1,7 +1,11 @@
 <!DOCTYPE html>
+<button ng-click="newGrid(amount, outline)">Change OutlineWidth<button>
+<input type='number' ng-value ="outline" ng-model="outline"></input>
+<button ng-click="newGrid(amount, outline)"> NEW GRID :D </button>
+<input type='number' ng-value ="amount" ng-model="amount"></input>
 
-<button ng-click="newGrid(amount)"> NEW GRID :D </button>
-<input type='number' ng-value ="amount" ng-model="amount">
+
+
 <div id="gridContainer" class="pixelGrid_container">
 
 
@@ -19,6 +23,7 @@
                 height: {{pixel.height}};
                 width: {{pixel.width}};
                 float: left;
+                border: {{pixel.outline}}
         }
         </style>
         <style ng-if="$odd">
@@ -28,6 +33,7 @@
                 height: {{pixel.height}};
                 width: {{pixel.width}};
                 float: left;
+                border: {{pixel.outline}}
         }
         </style>
     </div>
